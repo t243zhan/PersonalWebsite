@@ -1,0 +1,47 @@
+<link rel="stylesheet" type="text/css" href="../css/button.css">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<link rel="stylesheet" type="text/css" href="../css/feedback.css">
+
+
+<div class="wrapper">
+	<table class="header">
+		<tr>
+		<td><a class="button" href="../index.html">Home</a></td>
+		<td><a class="button" href="../About.html">About</a></td>
+		<td class="shown">
+			<a class="button"  href="../Academic/index.html">Academic</a>
+			<ul class="hidden" style="width: 170px">
+				<li><a class="button" href="../Academic/1A.html">1A</a></li>
+				<li><a class="button" href="../Academic/1B.html">1B</a></li>
+				<li><a class="button" href="../Academic/2A.html">2A</a></li>
+				<li><a class="button" href="../Academic/2B.html">2B</a></li>
+			</ul>
+		</td>
+		<td class="shown">
+			<a class="button" href="../Experience/index.html">Portfolio</a>
+			<ul class="hidden" style="width: 154">
+				<li><a class="button" href="../Experience/Web/index.html">Web</a></li>
+				<li><a class="button" href="../Experience/Android/index.html">Android</a></li>
+				<li><a class="button" href="../Experience/Internship/index.html">Internship</a></li>
+				<li><a class="button" href="../Experience/Side_Project/index.html">Side Project</a></li>
+			</ul>
+		</td>
+		<td><a class="button active-button"  href="Contact.html">Contact</a></td>
+		</tr>
+	</table>
+
+	<form action="send_email.php" method="POST" class="feedback" id="email_feedback">
+		<h1>Get in Touch</h1>
+		<p>Your Name:</p>
+		<input type="text" name="name" value="Enter Your Name..." maxlength="100"  onblur="if (this.value == '') {this.value = 'Enter Your Name...'; this.style.color='gray';}"
+ onfocus="if (this.value == 'Enter Your Name...') {this.value = ''; this.style.color='black';}"/><br/>
+		<p>Your Email:</p>
+		<input type="text" name="email" value="Enter Your Email..." maxlength="100"  onblur="if (this.value == '') {this.value = 'Enter Your Email...'; this.style.color='gray';}"
+ onfocus="if (this.value == 'Enter Your Email...') {this.value = ''; this.style.color='black';}"/><br/>
+		<p>Your Comments:</p>
+		<textarea type="text" name="comments" value="Enter Your Comments..." rows="10" cols="50" onblur="if (this.value == '') {this.value = 'Enter Your Comments...'; this.style.color='gray';}"
+ onfocus="if (this.value == 'Enter Your Comments...') {this.value = ''; this.style.color='black';}">Enter Your Comments...</textarea><br/>
+		<input type="submit" value="Send Message"> 
+	</form>
+
+</div>
